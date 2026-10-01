@@ -1,0 +1,164 @@
+/* easyIsland, by IKM*/
+
+.eirolbox {
+    display: block;
+    width: 650px;
+    box-sizing: border-box;
+    margin: 25px auto;
+    background: var(--n1);
+    color: var(--n4);
+    border-style: solid;
+    border-width: 30px;
+    border-color: var(--gg4);
+    border-color: color-mix(
+        in srgb,
+        var(--gg4) 70%,
+        transparent
+    );
+    outline: 1px solid var(--gg4);
+}
+
+.eirolbox br {
+    display: none;
+}
+
+.eirolhead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 30px;
+    gap: 25px;
+}
+
+.eirolheading {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.eiroltitle {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 12px 0;
+    font-family: var(--f1);
+    font-size: 28px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: var(--gg4);
+}
+
+.eirolquote {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 0 0 0;
+    border-top: 1px solid
+        color-mix(in srgb, var(--gg4) 45%, transparent);
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: .5px;
+    color: var(--n4);
+}
+
+.eirolicon {
+    display: flex;
+    flex: 0 0 75px;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid
+        color-mix(in srgb, var(--gg4) 55%, transparent);
+    background:
+        color-mix(in srgb, var(--gg4) 10%, var(--n1));
+}
+
+.eirolicon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eirolicon-fa {
+    display: flex;
+    flex: 0 0 75px;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+}
+
+.eirolicon-fa .rolcircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid
+        color-mix(in srgb, var(--gg4) 70%, transparent);
+    background:
+        color-mix(in srgb, var(--gg4) 8%, transparent);
+}
+
+.eirolicon-fa .rolcircle i {
+    font-size: 22px;
+    color: var(--gg4);
+}
+
+.eiroltext {
+    display: block;
+    margin: 0 20px;
+    padding: 20px;
+    font-family: var(--f2);
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: justify;
+    color: var(--n4);
+}
+
+.eirolbox .roltext br {
+    display: initial;
+}
+
+.eiroltext strong,
+.eiroltext b {
+    color: var(--gg4);
+    font-weight: 700;
+}
+
+.eiroldata {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 20px 20px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 1px solid
+        color-mix(in srgb, var(--gg4) 45%, transparent);
+    font-family: "Courier New", monospace;
+    font-size: 9px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--n4);
+}
+
+.eiroldata span {
+    display: inline-block;
+}
+
+.eiroldata strong,
+.eiroldata b {
+    color: var(--gg4);
+    font-weight: 700;
+}
