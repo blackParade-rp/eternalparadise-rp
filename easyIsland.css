@@ -96,7 +96,7 @@
     height: 75px;
 }
 
-.eirolicon-fa .rolcircle {
+.eirolicon-fa .eirolcircle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,7 +110,7 @@
         color-mix(in srgb, var(--gg4) 8%, transparent);
 }
 
-.eirolicon-fa .rolcircle i {
+.eirolicon-fa .eirolcircle i {
     font-size: 22px;
     color: var(--gg4);
 }
@@ -126,7 +126,7 @@
     color: var(--n4);
 }
 
-.eirolbox .roltext br {
+.eirolbox .eiroltext br {
     display: initial;
 }
 
