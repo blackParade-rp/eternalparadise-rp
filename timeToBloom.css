@@ -34,16 +34,12 @@
     bottom: 0;
     width: 400px;
     height: 185px;
-    background-color: var(--n1);
-    -webkit-mask-image: url("https://i.imgur.com/G9tAXii.png");
-    mask-image: url("https://i.imgur.com/OZwoHR3.png");
-    -webkit-mask-position: right bottom;
-    mask-position: right bottom;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    mask-size: contain;
+    background-image: url("https://i.imgur.com/G9tAXii.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
     pointer-events: none;
+    filter: invert(1);
 }
 
 .ttbtitle {
@@ -82,10 +78,18 @@
 }
 
 .ttbtext u {
-    color: var(--gg4);
-    text-decoration: underline;
-    text-decoration-color: var(--gg4);
-    text-underline-offset: 3px;
+    color: inherit;
+    text-decoration: none;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 45%,
+        var(--gg4) 45%,
+        var(--gg4) 90%,
+        transparent 90%
+    );
+    padding: 0 2px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 .ttbfooter {
@@ -93,27 +97,27 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12px;
-    width: 85%;
+    width: 100%;
     box-sizing: border-box;
-    margin: 0 auto 30px;
-    padding: 15px 20px;
-    border: 1px solid var(--gg4);
+    margin: 0;
+    padding: 18px 25px;
+    gap: 15px;
+    background-color: var(--gg4);
     font-family: "Courier New", monospace;
     font-size: 10px;
     line-height: 1.5;
     text-align: center;
-    color: var(--n4);
+    color: var(--n1);
 }
 
 .ttbfooter b,
 .ttbfooter strong {
-    color: var(--gg4);
+    color: inherit;
     font-weight: 700;
 }
 
 .ttbseparator {
-    color: var(--gg4);
+    color: inherit;
     font-size: 14px;
     font-weight: 700;
 }
