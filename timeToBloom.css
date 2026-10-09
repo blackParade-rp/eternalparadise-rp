@@ -59,8 +59,8 @@
     font-weight: 700;
     line-height: 1.15;
     text-align: center;
-    color: #FFFFFF;
-    text-shadow: 2px 1px 1px #000000;
+    color: var(--n4);
+    text-shadow: 2px 1px 1px var(--gg4);
 }
 
 .ttbtext {
