@@ -25,6 +25,11 @@
     padding: 20px;
     background-color: var(--gg4);
     overflow: hidden;
+    border-bottom: 8px solid color-mix(
+    in srgb,
+    var(--gg4) 20%,
+    transparent
+);
 }
 
 .ttbhead::after {
@@ -108,6 +113,11 @@
     line-height: 1.5;
     text-align: center;
     color: var(--n1);
+    border-top: 8px solid color-mix(
+    in srgb,
+    var(--gg4) 20%,
+    transparent
+);
 }
 
 .ttbfooter b,
