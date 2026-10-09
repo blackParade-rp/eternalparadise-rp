@@ -8,6 +8,7 @@
     background: var(--n1);
     color: var(--n4);
     overflow: hidden;
+    outline: 1px solid var(--n4);
 }
 
 .timetobloom br {
